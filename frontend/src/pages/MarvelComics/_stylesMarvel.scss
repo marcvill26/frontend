@@ -30,7 +30,7 @@ body {
     border-radius: 8px;
     // box-shadow:0 0 10px 1px rgb(170, 34, 34);
   }
-  &__hero {
+  &__comic {
     font-size: 25px;
     font-weight: 600;
     color: #000000;
@@ -41,7 +41,7 @@ body {
       text-transform: uppercase;
     }
   }
-  &__name {
+  &__writer {
     font-size: 18px;
 
     color: #000000;
@@ -59,7 +59,7 @@ body {
     position: absolute;
     top: 190px;
   }
-  &__bio {
+  &__year {
     position: absolute;
     top: 185px;
     color: #000000;
@@ -101,16 +101,6 @@ body {
     background-size: 100% 100%;
     border-radius: 8px;
     transition: 1s;
-  }
-
-  &__footerInfo {
-    position: absolute;
-    box-shadow: -70px;
-    color: rgb(14, 1, 16);
-    font-size: 18px;
-    &::first-letter {
-      text-transform: uppercase;
-    }
   }
 }
 

@@ -2,12 +2,13 @@
   display: flex;
   justify-content: center;
   position: relative;
-  top: 35px;
+  top: 3rem;
   &__input {
-    width: 600px;
+    padding: 0 20px;
+    width: 450px;
     height: 30px;
-    border: none;
-    border-radius: 8px;
-    padding: 0px 20px;
+    background: none;
+    border-radius: 10px;
+    border: 1px solid white;
   }
 }

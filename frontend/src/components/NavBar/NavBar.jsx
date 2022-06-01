@@ -1,33 +1,39 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { paths } from "../../constants";
-
-const { home, marvelComics, dcComics, shop, login, admin, adminShop } = paths;
+import { BiCartAlt } from "react-icons/bi";
 
 const Navbar = () => {
   return (
     <nav className="menu">
-      <Link to={home.url} className="menu__link">
-        {home.name}
+      <Link to="/home" className="menu__link">
+        home
       </Link>
-      <Link to={marvelComics.url} className="menu__link">
-        {marvelComics.name}
+      <Link to="/marvelComics" className="menu__link menu__link--marvel">
+        marvel comics
       </Link>
-      <Link to={dcComics.url} className="menu__link menu__link--dc">
-        {dcComics.name}
+      <Link to="/dcComics" className="menu__link menu__link--dc">
+        dc comics
       </Link>
-      <Link to={shop.url} className="menu__link">
-        {shop.name}
+      <Link to="/shop" className="menu__link">
+        shop
       </Link>
-      <Link to={login.url} className="menu__link">
-        {login.name}
+      <Link to="/login" className="menu__link">
+        login
       </Link>
-      <Link to={admin.url} className="menu__link">
-        {admin.name}
+      <Link to="/adminComics" className="menu__link">
+        adminComics
       </Link>
-      <Link to={adminShop.url} className="menu__link">
-        {adminShop.name}
+      <Link to="/adminShop" className="menu__link">
+        adminShop
       </Link>
+      <Link to="/darkMode" className="menu__link">
+        <darkMode />
+      </Link>
+      <div>
+        <a href="#" className="BiCartAlt">
+          <BiCartAlt />
+        </a>
+      </div>
     </nav>
   );
 };

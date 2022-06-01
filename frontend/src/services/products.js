@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const endpoint = "api/products";
+const endpoint = "/products";
 const baseURL = `http://localhost:3000`;
 const api = axios.create({
   baseURL,

@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import CardsMarvel from "../../marvelCard/marvelCard";
+import CardsMarvel from "../CardsMarvel/CardsMarvel";
 
 const Marvelcomics = () => {
+  const baseURL = `http://localhost:3000`;
+  const endpoint = "/comics";
   const [marvelcomics, setMarvelComics] = useState([]);
   useEffect(() => {
-    axios.get("marvel.json").then((response) => setMarvelComics(response.data));
-  }, []);
+    axios
+      .get(baseURL + endpoint)
+      .then((response) => setMarvelComics(response.data));
+  });
   return (
     <div className="marvel-list">
       {marvelcomics.map((comicsMarvel) => {
@@ -14,13 +18,10 @@ const Marvelcomics = () => {
           <CardsMarvel
             key={comicsMarvel.id}
             id={comicsMarvel.id}
-            hero={comicsMarvel.hero}
-            nameHero={comicsMarvel.nameHero}
+            comic={comicsMarvel.comic}
             writer={comicsMarvel.writer}
             year={comicsMarvel.year}
             image={comicsMarvel.image}
-            description={comicsMarvel.description}
-            collections={comicsMarvel.collections}
             penciler={comicsMarvel.penciler}
             issues={comicsMarvel.issues}
           />
