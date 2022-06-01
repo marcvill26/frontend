@@ -12,7 +12,7 @@ const users = [
   },
 ];
 
-const usersDocument = Users.map((user) => new Users(user));
+const usersDocument = users.map((user) => new Users(user));
 
 database
   .connectDB()

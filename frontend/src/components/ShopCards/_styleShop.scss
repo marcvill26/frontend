@@ -1,0 +1,13 @@
+.shopCar {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+  top: 80px;
+  &__cards {
+    padding: 10px;
+    background: lightgray;
+    width: 250px;
+    height: 250px;
+  }
+}

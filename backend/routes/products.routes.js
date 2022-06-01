@@ -14,8 +14,7 @@ const products = [
     article: "Spider-man funko",
     price: "12 euros",
     Stock: 20,
-    urlImage:
-      "https://cdnfuturartshop-9d53.kxcdn.com/83862-large_default/marvel-pop-80%C2%BA-spider-man-593.jpg",
+    urlImage: "https://img.dynos.es/img/1cb91/2062b/13912080605-0.jpg",
   },
 ];
 

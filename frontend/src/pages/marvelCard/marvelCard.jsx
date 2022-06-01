@@ -11,13 +11,14 @@ export default function marvelCard({ ...rest }) {
         <div className="comic-card__writer">
           <span>writer:</span> {writer}
         </div>
+        <p className="comic-card__penciler">
+          <span>penciler:</span> {penciler}
+        </p>
         <div className="comic-card__divider"></div>
         <p className="comic-card__year">
           <span>year:</span> {year}
         </p>
-        <p className="comic-card__penciler">
-          <span>penciler:</span> {penciler}
-        </p>
+
         <p className="comic-card__issues">
           <span>issues:</span> {issues}
         </p>
