@@ -1,24 +1,12 @@
-//requerimos dotenv
-const dotenv = require("dotenv");
-dotenv.config();
-
-//requerimos mongoose
+const config = require("./config");
 const mongoose = require("mongoose");
 
-//guardamos URL
-const mongoDb = require("mongoose");
+const DB_URL = config.DB_URL;
 
-//se configura la connect
-const connect = async () => {
-  try {
-    const db = await mongoose.connect(mongoDb, {
-      useNewUrlParser: true,
-      useUnitfiedTopology: true,
-    });
-    const { name, host } = db.connection;
-    console.log(`Connected with db: ${name}, in host ${host}`);
-  } catch (error) {
-    console.log(`Error to connect with DB`, error);
-  }
-};
-module.exports = { connect };
+const connectDB = () =>
+  mongoose.connect(DB_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+
+module.exports = { connectDB, DB_URL };
