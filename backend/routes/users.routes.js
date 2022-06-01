@@ -43,5 +43,3 @@ userRouter.post("/logout", [isAuthenticated], (req, res, next) => {
 });
 
 module.exports = userRouter;
-
-module.exports = userRouter;

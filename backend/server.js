@@ -28,6 +28,7 @@ server.get("/", (req, res) => {
 server.use("/users", usersRouter);
 server.use("/comics", comicsRouter);
 server.use("/products", productsRouter);
+
 server.use("*", (req, res, next) => {
   const error = new Error("Route not found");
   error.status = 404;

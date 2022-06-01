@@ -15,7 +15,7 @@ const comics = [
 const productsDocument = Products.map((product) => new Products(product));
 
 database
-  .connect()
+  .connectDB()
   .then(async () => {
     const allproducts = await Products.find();
     if (allproducts.length > 0) {

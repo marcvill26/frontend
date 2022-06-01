@@ -7,7 +7,7 @@ const users = [
     user: "Marcos villegas",
     email: "marcvill@gmail.com",
     password: "123456.A",
-    confirnPassword:"123456.A",
+    confirnPassword: "123456.A",
     role: "Admin",
   },
 ];
@@ -15,7 +15,7 @@ const users = [
 const usersDocument = Users.map((user) => new Users(user));
 
 database
-  .connect()
+  .connectDB()
   .then(async () => {
     const allusers = await Users.find();
     if (allusers.length > 0) {

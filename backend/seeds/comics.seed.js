@@ -17,7 +17,7 @@ const comics = [
 const comicsDocument = comics.map((comic) => new Comics(comic));
 
 database
-  .connect()
+  .connectDB()
   .then(async () => {
     const allComics = await Comics.find();
     if (allComics.length > 0) {
