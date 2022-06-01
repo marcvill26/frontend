@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import CardsMarvel from "../CardsMarvel/CardsMarvel";
+import CardsMarvel from "../marvelCard/marvelCard";
 
 const Marvelcomics = () => {
   const baseURL = `http://localhost:3000`;

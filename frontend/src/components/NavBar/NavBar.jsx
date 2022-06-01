@@ -26,9 +26,7 @@ const Navbar = () => {
       <Link to="/adminShop" className="menu__link">
         adminShop
       </Link>
-      <Link to="/darkMode" className="menu__link">
-        <darkMode />
-      </Link>
+
       <div>
         <a href="#" className="BiCartAlt">
           <BiCartAlt />

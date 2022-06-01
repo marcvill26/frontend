@@ -25,6 +25,14 @@ server.get("/", (req, res) => {
   res.status(200).send("Server is up & running");
 });
 
+//allow access
+server.use((req, res, next) => {
+  res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
+  res.header("Access-Control-Allow-Credentials", true);
+  res.header("Access-Control-Allow-Headers", "Content-Type");
+  next();
+});
+
 server.use("/users", usersRouter);
 server.use("/comics", comicsRouter);
 server.use("/products", productsRouter);
