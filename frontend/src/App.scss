@@ -1,0 +1,19 @@
+@import "./components/NavBar/navaBarStyle.scss";
+@import "./pages/adminComics/stylesAdmComic";
+@import "./pages/Home/styleHome";
+@import "./pages/MarvelComics/stylesMarvel";
+@import "./pages/DcComics/stylesDc";
+@import "./pages/ShopCards/styleShop";
+@import "./pages/login/login.scss";
+@import "./components/footer/style";
+@import "./components/search/search.scss";
+
+.App {
+  font-family: "Russo One", sans-serif;
+}
+body {
+  font-family: "Russo One", sans-serif;
+  background-color: #ef476f;
+  margin: 0;
+  padding: 0;
+}
