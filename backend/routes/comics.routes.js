@@ -61,14 +61,11 @@ comicsRouter.get("/:id", (req, res, next) => {
 comicsRouter.post("/", (req, res, next) => {
   const imageComic = req.file_url ? req.file_url : undefined;
   const newComic = new Comics({
-    hero: req.body.hero,
-    nameHero: req.body.nameHero,
+    comic: req.body.comic,
     writer: req.body.writer,
     year: req.body.year,
-    description: req.body.description,
     penciler: req.body.penciler,
     image: req.body.image,
-    collection: req.body.collection,
     issues: req.body.issues,
     imagen: imageComic,
   });
