@@ -4,7 +4,7 @@ import CardsMarvel from "../marvelCard/marvelCard";
 
 const DcComics = () => {
   const baseURL = `http://localhost:3000`;
-  const endpoint = "/comics";
+  const endpoint = "/dcComics";
   const [dccomics, setDcComics] = useState([]);
   useEffect(() => {
     axios

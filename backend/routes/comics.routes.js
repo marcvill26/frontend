@@ -3,6 +3,7 @@ const {
   upload,
   uploadToCloudinary,
 } = require("../middlewares/file.middleware");
+
 const Comics = require("../models/Comics");
 const auth = require("../middlewares/auth.middleware");
 
@@ -44,7 +45,7 @@ comicsRouter.get("/:id", (req, res, next) => {
   return Comics.findById(id)
     .then((comic) => {
       if (!comic) {
-        const error = new Error("Comic not found");
+        const error = new Error("Marvel comic not found");
         error.status = 404;
         return next(error);
       }
