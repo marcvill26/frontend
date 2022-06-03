@@ -4,10 +4,10 @@ const Schema = mongoose.Schema;
 
 const userSchema = new Schema(
   {
-    user: { type: String, require: true },
+    user: { type: String },
     email: { type: String, require: true },
     password: { type: String, require: true },
-    confirnPassword:{type: String, require:true},
+    confirnPassword: { type: String, require: true },
     role: { type: String },
   },
   {
