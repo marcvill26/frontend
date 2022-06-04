@@ -6,6 +6,7 @@ import Marvelcomics from "./pages/MarvelComics/MarvelComics";
 import Admincomics from "./pages/adminComics/adminComics";
 import ShopCards from "./components/carShop/carShop";
 import DcComic from "./pages/DcComics/DcComics";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/login/login";
 import "./App.scss";
