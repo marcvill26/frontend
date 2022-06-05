@@ -16,7 +16,8 @@ body {
   width: 330px;
   transform: scale(0.7);
   border-radius: 8px;
-
+  position: relative;
+  top: 7rem;
   &__image {
     height: 350px;
     width: 250px;

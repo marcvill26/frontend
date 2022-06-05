@@ -1,6 +1,6 @@
 .BiCartAlt {
-  color: red;
-  font-size: 20px;
+  color: rgb(249, 56, 56);
+  font-size: 25px;
   transition: 0.5s;
   &:hover {
     color: rgb(136, 5, 5);
@@ -37,6 +37,7 @@ nav {
   &__link--marvel {
     background-color: #d90429;
     height: 3rem;
+    width: 120px;
     transition: 0.5s;
     text-align: center;
     &:hover {

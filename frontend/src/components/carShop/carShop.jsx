@@ -19,7 +19,7 @@ const Shop = () => {
             id={shopCar.id}
             article={shopCar.article}
             Stock={shopCar.Stock}
-            urlImage={shopCar.urlImage}
+            Image={shopCar.Image}
             price={shopCar.price}
           />
         );

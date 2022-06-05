@@ -2,7 +2,6 @@ const express = require("express");
 const passport = require("passport");
 const { signIn } = require("../auth/jsonwebtoken");
 const { isAuthenticated } = require("../middlewares/auth.middleware");
-const Users = require("../models/User");
 
 const userRouter = express.Router();
 

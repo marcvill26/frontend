@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function search() {
+const Search = () => {
   return (
     <div className="search">
       <input
@@ -8,6 +8,9 @@ export default function search() {
         type="text"
         placeholder="Search.."
       ></input>
+      <button className="search__button">buscar comic</button>
     </div>
   );
-}
+};
+
+export default Search;

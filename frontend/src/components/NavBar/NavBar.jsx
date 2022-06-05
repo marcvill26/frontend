@@ -9,11 +9,9 @@ const Navbar = () => {
         home
       </Link>
       <Link to="/marvelComics" className="menu__link menu__link--marvel">
-        marvel comics
+        comics
       </Link>
-      <Link to="/dcComics" className="menu__link menu__link--dc">
-        dc comics
-      </Link>
+
       <Link to="/shop" className="menu__link">
         shop
       </Link>

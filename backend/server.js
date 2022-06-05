@@ -6,7 +6,7 @@ const { auth } = require("./middlewares/auth.middleware");
 const comicsRouter = require("./routes/comics.routes");
 const productsRouter = require("./routes/products.routes");
 const usersRouter = require("./routes/users.routes");
-const comicsDcRouter = require("./routes/dcComics.routes");
+
 const database = require("./database");
 
 const PORT = config.PORT;
@@ -37,7 +37,6 @@ server.use((req, res, next) => {
 server.use("/users", usersRouter);
 server.use("/comics", comicsRouter);
 server.use("/products", productsRouter);
-server.use("/dcComics", comicsDcRouter);
 
 server.use("*", (req, res, next) => {
   const error = new Error("Route not found");

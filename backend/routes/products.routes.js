@@ -11,10 +11,43 @@ const productsRouter = express.Router();
 
 const products = [
   {
-    article: "Spider-man funko",
-    price: "12 euros",
-    Stock: 20,
-    urlImage: "https://img.dynos.es/img/1cb91/2062b/13912080605-0.jpg",
+    article: "spiderman funko",
+    price: 12,
+    Image:
+      "https://cdnfuturartshop-9d53.kxcdn.com/83862-large_default/marvel-pop-80%C2%BA-spider-man-593.jpg",
+    stock: 15,
+    productId: 1,
+    isactive: true,
+  },
+
+  {
+    article: "Daredevil funko",
+    price: 12,
+    urlImg:
+      "https://www.funkotienda.com/wp-content/uploads/2017/02/funko-pop-daredevil.jpg",
+    stock: 15,
+    productId: 2,
+    isactive: true,
+  },
+
+  {
+    article: "Caballero luna",
+    price: 12,
+    urlImg:
+      "https://funkollection.es/wp-content/uploads/2022/04/figura-Funko-POP-Mr.-Knight-Caballero-Luna-Moon-Knight-Marvel.jpg",
+    stock: 15,
+    productId: 3,
+    isactive: true,
+  },
+
+  {
+    article: "Lobezno funko",
+    price: 12,
+    urlImg:
+      "https://www.funkotienda.com/wp-content/uploads/2020/05/Funko-Pop-Marvel-X-Men-20th-Wolverine-In-Jacket.jpg",
+    stock: 15,
+    isactive: true,
+    productId: 4,
   },
 ];
 

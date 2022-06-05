@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  top: 3rem;
+  top: 6rem;
   &__input {
     padding: 0 20px;
     width: 450px;
@@ -10,5 +10,6 @@
     background: none;
     border-radius: 10px;
     border: 1px solid black;
+    font-family: "Righteous", cursive;
   }
 }

@@ -7,7 +7,7 @@ const productsSchema = new Schema(
     article: { type: String, require: true },
     price: { type: String, require: true },
     Stock: { type: Number, require: true },
-    urlImage: { type: String, require: true },
+    Image: { type: String, require: true },
   },
   {
     timestamps: true,
