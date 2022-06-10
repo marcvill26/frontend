@@ -1,11 +1,10 @@
 @import "./components/NavBar/navaBarStyle.scss";
-@import "./pages/adminComics/stylesAdmComic";
-@import "./pages/Home/styleHome";
+
 @import "./pages/MarvelComics/stylesMarvel";
 
-@import "./pages/login/login.scss";
+
 @import "./components/footer/style";
-@import "./components/search/search.scss";
+
 @import "./components/ShopCards/styleShop";
 .App {
   font-family: "Russo One", sans-serif;

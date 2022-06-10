@@ -1,9 +1,12 @@
 import React from "react";
 
+
 export default function marvelCard({ ...rest }) {
+ 
   const { comic, writer, year, penciler, image, issues } = rest;
   return (
     <div className="comic-card">
+      
       <div className="comic-card__info">
         <div className="comic-card__comic">
           <span>comic:</span> {comic}

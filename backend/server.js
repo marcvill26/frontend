@@ -6,7 +6,7 @@ const { auth } = require("./middlewares/auth.middleware");
 const comicsRouter = require("./routes/comics.routes");
 const productsRouter = require("./routes/products.routes");
 const usersRouter = require("./routes/users.routes");
-
+const cors = require("cors");
 const database = require("./database");
 
 const PORT = config.PORT;
@@ -43,6 +43,11 @@ server.use("*", (req, res, next) => {
   error.status = 404;
   return next(error);
 });
+
+server.use(cors({
+  origin:['http://localhost:3000','http://localhost:4200'],
+  Credential:true,
+}));
 
 server.use((err, _req, res, _next) => {
   return res
